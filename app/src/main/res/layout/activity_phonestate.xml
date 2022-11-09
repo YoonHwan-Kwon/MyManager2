@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneStateActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="149dp"
+        android:layout_height="55dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:drawableBottom="@drawable/homexml"
+        android:text="홈"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_health" />
+
+    <Button
+        android:id="@+id/btn_health"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="#03714242"
+        android:drawableBottom="@drawable/gymxml"
+        android:text="건강"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_calendar" />
+
+    <Button
+        android:id="@+id/btn_weather"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:drawableBottom="@drawable/cloudyxml"
+        android:text="날씨"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_home" />
+
+    <Button
+        android:id="@+id/btn_state"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:drawableEnd="@drawable/ic_baseline_mobile_friendly_24"
+        android:text="상태"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_weather" />
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="6dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:drawableBottom="@drawable/ic_baseline_calendar_month_24"
+        android:text="캘린더"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

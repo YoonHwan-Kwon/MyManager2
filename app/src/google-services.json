@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904788246980",
+    "firebase_url": "https://mymanager-ed690-default-rtdb.firebaseio.com",
+    "project_id": "mymanager-ed690",
+    "storage_bucket": "mymanager-ed690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904788246980:android:309c471565601561716491",
+        "android_client_info": {
+          "package_name": "ac.baekseok.mymanager2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904788246980-8nv2b15k3eb9hu1vsc9o7cpbbaa8e2ld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5NgV6bfoZnDM7dVYX2gRfYi3Euq6tiEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904788246980-8nv2b15k3eb9hu1vsc9o7cpbbaa8e2ld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyManager2</string>
+
+    <string-array name="TIME">
+        <item>"8시"</item>
+        <item>"12시"</item>
+        <item>"19시"</item>
+    </string-array>
+</resources>

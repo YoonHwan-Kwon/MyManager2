@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health_MystateActivity">
+
+    <TextView
+        android:id="@+id/tv_pill"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="복용 약"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_weight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_weight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <EditText
+        android:id="@+id/edt_pill"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tv_pill"
+        app:layout_constraintTop_toBottomOf="@+id/edt_weight" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="49dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:drawableBottom="@android:drawable/ic_menu_revert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_age"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="몸무게"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_height"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_height"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height" />
+
+    <EditText
+        android:id="@+id/edt_height"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tv_height"
+        app:layout_constraintTop_toBottomOf="@+id/edt_age" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="나이"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="저장"
+        app:layout_constraintEnd_toEndOf="@+id/tv_result"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="BMI"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pill"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_pill"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pill" />
+
+    <TextView
+        android:id="@+id/tv_bmi"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pill" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/edt_pill"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_pill"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bmi"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="키"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_age"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+    <EditText
+        android:id="@+id/edt_weight"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/tv_weight"
+        app:layout_constraintTop_toBottomOf="@+id/edt_height" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
